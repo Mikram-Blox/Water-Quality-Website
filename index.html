@@ -2,186 +2,192 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Deforestation Advisory Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRGS Stream Kaitiakitanga - Water Quality</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="navbar">
+    <!-- NAVBAR (Sticky Navigation) -->
+    <header id="navbar">
         <div class="nav-left">
-            <div id="logo-area">
-                <span style="font-size: 25px;">🌳</span>
+            <div id="logo-circle">
+                <span>💧</span>
             </div>
             <div id="search-box">
-                <input type="text" placeholder="Search advisory...">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search stream testing topics...">
+                <span class="clear-icon">✕</span>
             </div>
         </div>
 
-        <div id="menu-links">
-            <a href="#home-banner">Home</a>
-            <a href="#articles-page">Articles</a>
-            <a href="#trees-page">The Crisis</a>
-            <a href="#ocean-page">How to Help</a>
-            <a href="#about-page">About</a>
-            <a href="#contact-page">Contact</a>
-            <select>
-                <option>English</option>
+        <nav id="menu-links">
+            <a href="#home-banner" class="nav-btn">Home</a>
+            <a href="#testing-page" class="nav-btn">Testing Guide</a>
+            <a href="#data-page" class="nav-btn">Auckland Stats</a>
+            <a href="#report-page" class="nav-btn">Report Data</a>
+            <select class="lang-select">
+                <option>🌐 English</option>
+                <option>🇳🇿 Te Reo Māori</option>
             </select>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div id="home-banner">
-        <div id="banner-title">
-            <span class="emoji">🌲</span>
-            <span class="main-title">DEFORESTATION Advisory</span>
-            <span class="emoji">♻️</span>
+    <!-- PAGE 1: HOME PAGE (index.html) -->
+    <section id="home-banner" class="page-section">
+        <div id="hero-card">
+            <div class="hero-top-decor">
+                <span class="leaf-branch">🌱</span>
+                <span class="recycle-symbol">🌊</span>
+            </div>
+            <div class="hero-center-content">
+                <div class="bulb-icon">🔬</div>
+                <div class="hero-titles">
+                    <h2 class="advisory-sub">KAITIAKITANGA</h2>
+                    <h1 class="advisory-main">Water Quality</h1>
+                    <p class="advisory-tag">MOUNT ROSKILL GRAMMAR SCHOOL • PROTECT OUR STREAMS</p>
+                </div>
+            </div>
         </div>
-        <p class="sub-title">SAVE OUR FORESTS, PROTECT THE FUTURE</p>
-
-        <div id="globe-box">
-            <span style="font-size: 100px;">🌱</span>
+        
+        <div id="hero-graphic">
+            <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?w=800" alt="MRGS students monitoring local stream water quality" class="globe-img">
         </div>
-    </div>
+    </section>
 
-    <div id="articles-page" class="page">
-        <div class="title-bubble-wrapper">
-            <div class="title-bubble">
-                <h1>Articles</h1>
+    <!-- SECTION: HIGHLIGHT ARTICLES -->
+    <section id="articles-page" class="page-section">
+        <div class="header-bubble">
+            <h1>Stream Overview</h1>
+        </div>
+        
+        <div class="articles-grid">
+            <div class="art-card">
+                <div class="art-card-header">Clean Waterways</div>
+                <div class="art-card-body">
+                    <p>Healthy streams support native aquatic life, macroinvertebrates, and local bird species across Auckland.</p>
+                </div>
+            </div>
+            
+            <div class="art-card">
+                <div class="art-card-header">Urban Runoff</div>
+                <div class="art-card-body">
+                    <p>Litter, oil from roads, and heavy sediment wash into local streams during rain, harming aquatic ecosystems.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="art-card art-card-center">
+            <div class="art-card-header">Our Mission</div>
+            <div class="art-card-body">
+                <p>Teaching MRGS students Kaitiakitanga (guardianship) to inspect, test, and protect our local stream environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 2: TESTING GUIDE (testing.html) -->
+    <section id="testing-page" class="page-section">
+        <div class="header-bubble">
+            <h1>Testing Guide</h1>
+        </div>
+
+        <div class="split-row">
+            <div class="col-left-img">
+                <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500" alt="Student using pH chemical test strip near water">
+            </div>
+            <div class="col-right-box">
+                <p><strong>pH Levels & Temp:</strong> Water that is too acidic or warm reduces oxygen and stresses fish and macroinvertebrate populations.</p>
             </div>
         </div>
 
-        <div class="articles-container">
-            <div class="article-box">
-                <div class="box-heading">The Canopy</div>
-                <p class="box-text">Explore the severe impacts of global logging, agriculture expansion, and wildfire damage on our world's most ancient forest ecosystems.</p>
+        <div class="split-row">
+            <div class="col-left-box">
+                <p><strong>Clarity & Bugs:</strong> Turbid, muddy water blocks sunlight while macroinvertebrate counts reveal long-term stream health.</p>
             </div>
-
-            <div class="article-box">
-                <div class="box-heading">How to Help</div>
-                <p class="box-text">Discover everyday habits, smart consumer choices, and local community projects you can join to help plant trees and reduce paper waste.</p>
+            <div class="col-right-img">
+                <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=500" alt="Macroinvertebrates water sampling dish">
             </div>
         </div>
+    </section>
 
-        <div class="about-box-full">
-            <div class="box-heading">Our Mission</div>
-            <p class="box-text">We aim to educate students and communities about the accelerating rates of tree loss and give everyone simple, practical tools to fight climate change.</p>
+    <!-- PAGE 3: DATA PAGE ACCORDION (data.html) -->
+    <section id="data-page" class="page-section">
+        <div class="header-bubble">
+            <h1>Auckland Stats</h1>
         </div>
-    </div>
 
-    <div id="trees-page" class="page">
-        <div class="title-bubble-wrapper">
-            <div class="title-bubble">
-                <h1>The Crisis</h1>
+        <div class="full-width-box space-bottom">
+            <p>Click on an Auckland stream below to expand and view recent water quality health testing scores.</p>
+        </div>
+
+        <!-- Interactive Accordion Items -->
+        <details class="art-card space-bottom">
+            <summary class="art-card-header">Oakley Creek (Te Aka Silt) ▾</summary>
+            <div class="art-card-body">
+                <p><strong>pH:</strong> 7.2 | <strong>Turbidity:</strong> Moderate | <strong>Macro Score:</strong> Fair<br>Needs regular litter trap cleanups near road drains.</p>
             </div>
-        </div>
+        </details>
 
-        <div class="row">
-            <div class="left-col-img">
-                <img src="https://images.unsplash.com/photo-1621464761054-d90391ca3470?w=400" alt="Deforestation and cleared land">
+        <details class="art-card space-bottom">
+            <summary class="art-card-header">Meola Creek (Waitītī) ▾</summary>
+            <div class="art-card-body">
+                <p><strong>pH:</strong> 6.8 | <strong>Turbidity:</strong> High | <strong>Macro Score:</strong> Poor<br>Urban stormwater runoff affects water clarity after rain events.</p>
             </div>
-            <div class="right-col-text">
-                <p>THE IMPACT OF LOGGING: Large-scale industrial logging and land clearing for cattle ranching destroy millions of hectares of trees every single year. Forests act as the earth's natural lungs, and losing them means less carbon dioxide is filtered out of our atmosphere, heavily speeding up global warming.</p>
+        </details>
+
+        <details class="art-card space-bottom">
+            <summary class="art-card-header">Wairau Creek ▾</summary>
+            <div class="art-card-body">
+                <p><strong>pH:</strong> 7.4 | <strong>Turbidity:</strong> Clear | <strong>Macro Score:</strong> Good<br>High invertebrate population due to community riparian planting.</p>
             </div>
+        </details>
+    </section>
+
+    <!-- PAGE 4: REPORT ACTION PAGE (report.html) -->
+    <section id="report-page" class="page-section">
+        <div class="header-bubble">
+            <h1>Report Data</h1>
         </div>
 
-        <div class="row reverse">
-            <div class="left-col-text">
-                <p>LOSS OF BIODIVERSITY: Rainforests are home to over 80% of the world's land-living species. When habitats are fragmented or completely flattened by heavy machinery, rare animals and plants lose their homes, pushing many vulnerable species toward complete extinction.</p>
-            </div>
-            <div class="right-col-img">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400" alt="New sapling being planted in clear ground">
-            </div>
-        </div>
-    </div>
-
-    <div id="ocean-page" class="page">
-        <div class="title-bubble-wrapper">
-            <div class="title-bubble">
-                <h1>How to Help</h1>
-            </div>
+        <!-- Embedded YouTube Video (Styled via CSS, no obsolete frameborder) -->
+        <div class="video-container space-bottom">
+            <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Stream Testing Guide Video" allowfullscreen></iframe>
         </div>
 
-        <div class="row">
-            <div class="ocean-left-img">
-                <img src="https://images.unsplash.com/photo-1536657235019-030712f61567?w=400" alt="Recycling bins and eco choices">
-            </div>
-            <div class="ocean-right-text">
-                <p>SUSTAINABLE SHOPPING: You can make a massive difference just by checking labels at the grocery store. Look for FSC-certified paper products, avoid items containing unsustainable palm oil, and switch to digital notes instead of printing or using disposable notebooks whenever possible.</p>
-            </div>
-        </div>
-
-        <div class="ocean-banner-img">
-            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800" alt="Healthy growing green forest">
-        </div>
-
-        <div class="ocean-bottom-text">
-            <p>SUPPORTING REFORESTATION PROJECTS: Planting trees is one of the best ways to restore broken ecosystems. You can support local tree-planting charities, use eco-friendly search engines like Ecosia that plant trees while you browse, or volunteer for native bush regeneration projects in your local area.</p>
-        </div>
-    </div>
-
-    <div id="about-page" class="page">
-        <div class="title-bubble-wrapper">
-            <div class="title-bubble">
-                <h1>About Us</h1>
-            </div>
-        </div>
-
-        <div class="about-text-section">
-            <p>WHO WE ARE: We are a group of student environmental advocates dedicated to raising awareness about forest conservation. This website was built as part of a computer science project to show how digital media and clean web layouts can spread vital environmental advisories directly to young people.</p>
-        </div>
-
-        <div class="triple-images">
-            <div class="third-img"><img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=300" alt="Community tree planting event"></div>
-            <div class="third-img"><img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=300" alt="Volunteers working with eco tools"></div>
-            <div class="third-img"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300" alt="Hands holding fresh soil and plants"></div>
-        </div>
-
-        <div class="about-text-section">
-            <p>OUR FUTURE VISION: We hope to expand this platform into a school-wide environmental tracker network. By combining technology with real-world conservation data, we believe our generation can actively monitor local canopy loss and collaborate on community tree-planting goals to build a greener future.</p>
-        </div>
-    </div>
-
-    <div id="contact-page" class="page">
-        <div class="title-bubble-wrapper">
-            <div class="title-bubble">
-                <h1>Contact</h1>
-            </div>
-        </div>
-
-        <div id="contact-section">
-            <h2>Get Involved</h2>
-            <form>
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" name="username" required>
+        <div id="contact-card">
+            <h2>Submit Test Results</h2>
+            <form action="#" method="post">
+                <div class="field-group">
+                    <label for="student-name">Student Name / ID</label>
+                    <input type="text" id="student-name" name="student-name" placeholder="e.g. Alex - MRGS Eco Club" required>
                 </div>
 
-                <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" name="useremail" required>
+                <div class="field-group">
+                    <label for="stream-location">Stream Location</label>
+                    <input type="text" id="stream-location" name="stream-location" placeholder="e.g. Oakley Creek" required>
                 </div>
 
-                <div class="form-group">
-                    <label>Inquire About Volunteering</label>
-                    <textarea rows="6" name="usermessage" required></textarea>
+                <div class="field-group">
+                    <label for="ph-reading">pH & Water Observations</label>
+                    <textarea id="ph-reading" rows="4" name="ph-reading" placeholder="Record pH level, water temperature, clarity, and bugs found..." required></textarea>
                 </div>
 
-                <input type="submit" value="Submit" id="submit-button">
+                <button type="submit" id="submit-btn">Submit Record</button>
             </form>
-            <p class="disclaimer">your email details will be stored securely on our systems.<br><a href="#">learn how we handle your data</a></p>
+            <p class="privacy-note">Your stream data helps MRGS Science classes monitor local waterways.<br><a href="#">Read our Kaitiakitanga Data Policy</a></p>
         </div>
-    </div>
+    </section>
 
-    <div id="footer">
-        <h2 id="footer-head">Contact</h2>
-
-        <div id="socials-box">
-            <span class="social-link">📺 @SaveOurForests</span>
-            <span class="social-link">📸 @SaveOurForests</span>
-            <span class="social-link">👤 @SaveOurForests</span>
-            <span class="social-link">✉️ SaveOurForests@gmail.com</span>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <h2 id="footer-title">MRGS Kaitiakitanga</h2>
+        <div id="socials-bar">
+            <div class="social-item"><span class="icon yt">▶</span> @MRGSEcoClub</div>
+            <div class="social-item"><span class="icon ig">📷</span> @MRGSKaitiakitanga</div>
+            <div class="social-item"><span class="icon fb">f</span> @MRGSScience</div>
+            <div class="social-item"><span class="icon mail">✉</span> science@mrgs.school.nz</div>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>
